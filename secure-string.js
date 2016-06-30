@@ -58,7 +58,7 @@
         for (var j = 0; j < alphabet.length; j++) {
           if( alpha == alphabet[j] ){
             var outOfRange = function(num){
-              if(num > alphabet.length){
+              if(num >= alphabet.length){
                 num -= alphabet.length;
                 return outOfRange(num);
               } else{
