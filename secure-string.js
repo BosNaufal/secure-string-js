@@ -18,7 +18,7 @@
     var objPassword = password.split('');
 
     // Decode first if decrypt action
-    if(action == 'decrypt') unsafeString = decodeURIComponent(unsafeString);
+    if(action == 'decrypt') unsafeString = unsafeString;
 
     // split the unsafeString to array
     var obj = unsafeString.split('');
@@ -50,7 +50,6 @@
 
       then push it to secure string
 
-      return encoded URI Component of secure string
     */
     // ENCRYPT IT!
     if(action == 'encrypt'){
@@ -79,15 +78,13 @@
 
 
       // encrypted string
-      return encodeURIComponent(secure.join(''));
+      return secure.join('');
     }
 
 
 
     /**
       DECRYPT function
-
-      encode URI Component the unsafeString params then...
 
       will convert every single char of unsafeString become a number
       depend on its order on alphabet array

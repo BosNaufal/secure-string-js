@@ -11,7 +11,7 @@ Include the [secure-string.js](./secure-string.js) to your HTML or import it to 
 ## Usage
 ```javascript
 /**
-  secureString()
+  secureString(action, unsafeString, password)
 
   @param {String} action -> 'encrypt' or 'decrypt'
 
